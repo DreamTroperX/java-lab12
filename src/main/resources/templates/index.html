@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns: th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Tabulation</title>
+</head>
+<body>
+<h1>Tabulation</h1>
+<form action="tabulation" method="post">
+    <label for="a" th:text="|a:|"></label>
+    <input type="text" id="a" name="a"><br/>
+    <label for="h" th:text="|h:|"></label>
+    <input type="text" id="h" name="h"><br/>
+    <label for="begin" th:text="|begin:|"></label>
+    <input type="text" id="begin" name="begin"><br/>
+    <label for="end" th:text="|end:|"></label>
+    <input type="text" id="end" name="end"><br/>
+    <button type="submit" th:text="|result|"></button>
+</form>
+</body>
+</html>
